@@ -1,0 +1,164 @@
+.search-bar{
+    display:block;
+    font-size:20px;
+}
+.header{
+    height:55px;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(198, 198, 198);
+    z-index:100;
+
+}
+
+.left-section{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hamburger-menu{
+    height:24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+.youtube-logo{
+    height:20px;
+}
+.middle-section{
+    flex:1;
+    margin-left:100px;
+    margin-right:35px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.search-bar{
+    flex:1;
+    height:37px;
+    max-width:500px;
+    padding-left: 10px;
+    font-size: 16px;
+    border:1px solid rgb(190, 190, 190);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgb(0,0,0,0.05);
+    width:0;
+}
+.search-bar::placeholder{
+    font-family: Roboto ,Arial;
+    font-size: 16px;
+
+}
+.search-button{
+    height: 40px;
+    width:66px;
+    background-color: rgb(225, 222, 222);
+    border-width: 1px;
+    border-style: solid;
+    margin-left: -1px;
+}
+.search-button,
+.voice-search-button,
+.right-section_buttons,
+.hamburger-menu,
+.youtube-logo
+{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-button .tool-tip,
+.voice-search-button .tool-tip,
+.right-section_buttons .tool-tip{
+    font-family: Roboto,Arial;
+    position:absolute;
+    bottom:-30px;
+    border-radius: 2px;
+    font-size: 12px;
+    background-color: grey;
+    color:white;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events:none;
+    white-space: nowrap;
+}
+.search-button:hover .tool-tip,
+.voice-search-button:hover .tool-tip,
+.right-section_buttons:hover .tool-tip{
+    opacity: 1;
+}
+.serach-logo{
+    height: 25px;
+    margin-top:4px;
+    border-color: rgb(190, 190, 190);
+    
+}
+.voice-search-button{
+    margin-left: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border:none;
+}
+.voice-search-icon{
+    height:21px;
+    margin-top: 4px;
+
+}
+.right-section_buttons{
+    position:relative;
+}
+.right-section{
+    width:200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:20px;
+    flex-shrink:0;
+}
+.upload_button{
+    height: 24px;
+}
+.youtube-apps_button{
+    height: 24px;
+}
+.notifications_button{
+    height: 24px;
+}
+.channel_image_button{
+    height: 32px;
+    border-radius: 16px;
+}
+.right-section_buttons{
+    border:none;
+    background-color: transparent;
+}
+.notifications-count{
+    position:absolute;
+    top:-2px;
+    right:-4px;
+    background-color: rgb(200,0,0);
+    color:white;
+    border-radius: 10px;
+    font-size:10px;
+    font-family: Robote,Arial;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
